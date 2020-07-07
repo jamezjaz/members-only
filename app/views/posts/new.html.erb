@@ -1,0 +1,8 @@
+<%= current_user.id %>
+
+<%= form_for(@post) do |t| %>
+    <%= t.label :body, 'Write Your Post' %>
+    <%= t.text_field :body %>
+    <%= t.hidden_field :user_id, :value => @post_user %>
+    <%= t.submit %>
+<% end %>
