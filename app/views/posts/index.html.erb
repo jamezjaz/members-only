@@ -6,8 +6,3 @@
 
 <% end %> <br />
 <%= link_to 'New Post', new_post_path %> <br/>
-<% if user_signed_in? %>
-  <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> <br />
-  <%else %>
-  <%= link_to 'Sign In', user_session_path %>
-<% end %>
