@@ -1,6 +1,12 @@
-<%= form_for(@post) do |t| %>
-    <%= t.label :body, 'Write Your Post' %>
-    <%= t.text_field :body %>
-    <%= t.hidden_field :user_id, :value => @post_user %>
-    <%= t.submit %>
-<% end %>
+<div class='container'>
+    <%= form_for(@post) do |t| %>
+        <div class='field'>
+          <%= t.label :body, 'Write Your Post' %> <br />
+          <%= t.text_area :body, :rows => '15', :cols => '100' %>
+          <%= t.hidden_field :user_id, :value => @post_user %>
+        </div>
+        <div class='actions'>
+          <%= t.submit %>
+        </div>
+    <% end %>
+</div>
