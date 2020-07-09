@@ -1,0 +1,14 @@
+<div class='container'>
+  <% @posts.each do |post| %>
+  <% if user_signed_in? %>
+  <h2 class='username'>
+    Post by: <%= post.user.username %>
+  </h2>
+  <% end %>
+  <p class='post'>
+  <%= post.body %>
+  </p>
+
+  <% end %> <br />
+  <%= link_to 'New Post', new_post_path, class: 'new-link' %> <br/>
+</div>
