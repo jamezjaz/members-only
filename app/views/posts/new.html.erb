@@ -1,0 +1,11 @@
+<div class='container'>
+    <%= form_for(@post) do |t| %>
+        <div class='field'>
+          <%= t.label :body, 'Write Your Post' %> <br />
+          <%= t.text_area :body, :rows => '15', :cols => '100' %>
+        </div>
+        <div class='actions'>
+          <%= t.submit %>
+        </div>
+    <% end %>
+</div>
