@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # rubocop:disable Layout/LineLength
 
 # Assuming you have not yet modified this file, each configuration option below

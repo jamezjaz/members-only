@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # rubocop:disable Style/NumericLiterals
 
 # This file is auto-generated from the current state of the database. Instead

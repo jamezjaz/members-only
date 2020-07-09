@@ -1,3 +1,4 @@
+# User Application record By Devise
 class User < ApplicationRecord
   has_many :posts
   # Include default devise modules. Others available are:

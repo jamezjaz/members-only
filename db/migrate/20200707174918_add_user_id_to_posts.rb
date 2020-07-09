@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Adds user_id column to Posts
 class AddUserIdToPosts < ActiveRecord::Migration[5.2]
   def change
