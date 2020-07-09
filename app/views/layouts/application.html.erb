@@ -18,10 +18,11 @@
   <p class="alert"><%= alert %></p>
   <% end %>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-custom">
+    <%= link_to 'Home', posts_path, class: 'nav-items' %>
     <% if user_signed_in? %>
       <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-items' %>
       <span class='nav-items'>
-        Welcome <%= current_user.username %> !
+        Welcome: <%= current_user.username %> !
       </span>
     <%else %>
       <%= link_to 'Sign In', user_session_path, class: 'nav-items' %>

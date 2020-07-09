@@ -32,16 +32,18 @@ _ We also styled with CSS and bootstrap
 ## Getting Started
 
 **Need web browser.** to download Repository
+
 **Need Terminal** to run the code
-cd <directory>
-rails server
 
 To get a local copy up and running follow these simple example steps.
 
 - Clone this [repository](https://github.com/jamezjaz/members-only)
 - open Terminal
 - cd members-only
-- Once in root folder, run `rake db:migrate`
+- Once in root folder;
+- run `bundle install`
+- run `rake db:create`
+- run `rake db:migrate`
 - Run `rails server` or just `rails s`
 - Then in your browser, type localhost:3000/ in address bar and punch enter.
 

@@ -3,7 +3,6 @@
         <div class='field'>
           <%= t.label :body, 'Write Your Post' %> <br />
           <%= t.text_area :body, :rows => '15', :cols => '100' %>
-          <%= t.hidden_field :user_id, :value => @post_user %>
         </div>
         <div class='actions'>
           <%= t.submit %>
